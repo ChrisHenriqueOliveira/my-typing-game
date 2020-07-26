@@ -86,6 +86,7 @@ export const ProgressArea = styled.div`
       select {
         margin-top: 8px;
         width: 100%;
+        -webkit-appearance: none;
       }
     }
   }

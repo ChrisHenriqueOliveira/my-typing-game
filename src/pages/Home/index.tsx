@@ -127,16 +127,16 @@ const Dashboard: React.FC = () => {
                 <option value="Hard">Hard</option>
               </select>
             </div>
-            {done ? (
-              <h2 style={{ backgroundColor: '#dfffa0' }}>
-                Parabéns! Você concluiu em {timer} segundos!
-              </h2>
-            ) : (
-              <h2>{timer} sec</h2>
-            )}
+            <h2>{timer} sec</h2>
           </div>
           <Progress percent={(totalAccuracy * 100) / gameText.length} success>
-            {`${totalAccuracy}/${gameText.length}`}
+            {done ? (
+              <h2 style={{ backgroundColor: '#dfffa0' }}>
+                Congratulations! You are finished in {timer} seconds!
+              </h2>
+            ) : (
+              `${totalAccuracy}/${gameText.length}`
+            )}
           </Progress>
         </ProgressArea>
         <TypingArea value={userText} onChange={e => handleType(e)} />
