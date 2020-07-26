@@ -1,32 +1,62 @@
 interface TextMapProps {
   id: number;
   text: string;
+  difficulty: string;
 }
 
 export const textMaps: TextMapProps[] = [
   {
     id: 1,
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar nibh sit amet ex varius, sit amet venenatis nulla efficitur. Sed blandit neque eu neque porttitor, eu fe',
+      'Nulla maximus neque felis, id accumsan nibh sagittis quis. Nunc maximus nisl in sagittis scelerisque.',
+    difficulty: 'Easy',
   },
   {
     id: 2,
     text:
-      'Opsum id erat feugiat placerat. Curabitur et luctus dui. Sed pretium sapien nec sodales rutrum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla con',
+      'Nullam convallis maximus velit. Morbi euismod, enim id facilisis aliquet, erat enim sagittis lectus, at dictum arcu tortor a nisl.',
+    difficulty: 'Easy',
   },
   {
     id: 3,
     text:
-      'Sque convallis et augue a vestibulum. Pellentesque eget diam neque. Curabitur ac hendrerit urna. Cras at lectus quis ante vehicula blandit at porttitor erat. Sed hendrerit nibh tellus. Do',
+      'Donec semper nisl in porta commodo. Ut sed augue sit amet nibh dapibus porta at eu mauris.',
+    difficulty: 'Easy',
   },
   {
-    id: 4,
+    id: 1,
     text:
-      'Ea dictumst. Vivamus condimentum dui est, non gravida nunc pulvinar in. Aenean a augue non mi pharetra luctus in vel purus. Vestibulum eget dui pellentesque massa eleifend lobo',
+      'Sque convallis et augue a vestibulum. Pellentesque eget diam neque. Curabitur ac hendrerit urna. Cras at lectus quis ante vehicula blandit at porttitor erat. Sed hendrerit nibh tellus.',
+    difficulty: 'Medium',
   },
   {
-    id: 5,
+    id: 2,
     text:
-      'Augue ac, faucibus interdum lorem. Duis scelerisque, dui eget ultrices commodo, libero neque vehicula dolor, non malesuada massa eros et libero. In in euismod felis',
+      'Quisque sodales, risus in vehicula blandit, turpis dui elementum nunc, et tempus tellus erat at velit. Nunc a arcu rutrum, euismod nisl eget, venenatis enim. Fusce magna mi, convallis a tristique suscipit, maximus vel erat.',
+    difficulty: 'Medium',
+  },
+  {
+    id: 3,
+    text:
+      'Donec nec neque eu lacus varius luctus. Nulla efficitur blandit justo, ut aliquet ante facilisis non. Aenean arcu orci, dapibus vitae suscipit id, viverra sodales dui.',
+    difficulty: 'Medium',
+  },
+  {
+    id: 1,
+    text:
+      'Aliquam vehicula nibh ut leo convallis sollicitudin. Suspendisse mollis aliquam tortor, quis porta enim rutrum sit amet. Integer sodales varius congue. Suspendisse lacinia vitae mauris pretium hendrerit. Suspendisse non tristique est. Proin vestibulum sollicitudin purus vitae pellentesque.',
+    difficulty: 'Hard',
+  },
+  {
+    id: 2,
+    text:
+      'Aliquam erat volutpat. Donec feugiat nec mauris vitae consequat. Sed scelerisque fermentum justo, eget aliquet dolor pulvinar ac. Cras molestie finibus cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sagittis porta ex at accumsan. ',
+    difficulty: 'Hard',
+  },
+  {
+    id: 3,
+    text:
+      'Mauris volutpat rhoncus orci non eleifend. Sed sed semper diam, id facilisis dolor. Donec vitae enim nulla. Nunc at orci ut justo maximus tempor id nec nisl. Donec congue eros eget mauris tempus, et ultrices quam bibendum. Nullam eget auctor mi, ut sagittis est.',
+    difficulty: 'Hard',
   },
 ];

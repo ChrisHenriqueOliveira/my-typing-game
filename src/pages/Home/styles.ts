@@ -43,29 +43,51 @@ export const ProgressArea = styled.div`
   width: 100%;
   margin-top: 16px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
 
-  h2 {
-    color: #000;
-  }
+  .main-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
 
-  button {
-    padding: 8px;
-    height: 50px;
-
-    color: #fff;
-    background-color: #838bc5;
-    border-radius: 10px;
-    border: 0;
-
-    & + button {
-      margin: 0 16px;
+    h2 {
+      font: 24px Roboto, sans-serif;
+      font-weight: 500;
+      color: #000;
+      margin: 0;
     }
-  }
 
-  div {
-    align-self: right;
+    .buttons {
+      width: 100%;
+      max-width: 200px;
+      display: flex;
+      flex-direction: column;
+
+      div {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      button,
+      select {
+        padding: 8px;
+        height: 50px;
+        width: 48%;
+
+        color: #fff;
+        background-color: #838bc5;
+        border-radius: 10px;
+        border: 0;
+      }
+
+      select {
+        margin-top: 8px;
+        width: 100%;
+      }
+    }
   }
 `;
 
